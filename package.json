@@ -1,0 +1,35 @@
+{
+  "name": "create-devablo-app",
+  "version": "1.0.0",
+  "description": "CLI for common project scaffolding",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devablo/devablo.cli.create-devablo-app.git"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "inquirer": "^6.2.0",
+    "shelljs": "^0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "scaffold"
+  ],
+  "bin": {
+    "create-devablo-app": "./index.js"
+  },
+  "author": "Aaron Morey <aarym@live.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/devablo/devablo.cli.create-devablo-app",
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/devablo/devablo.cli.create-devablo-app/issues"
+  }
+}
