@@ -1,6 +1,6 @@
 {
   "name": "create-devablo-app",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "CLI for common project scaffolding",
   "main": "./src/index.js",
   "repository": {

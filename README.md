@@ -13,6 +13,9 @@ Basic structure & scaffolding for common JavaScript projects.
 |-- src
 |   |-- scripts
 |   |-- template
+|   |   |-- build
+|   |   |-- docs
+|   |   |-- src
 |   |-- index.js
 |   index.js
 |-- package.json
