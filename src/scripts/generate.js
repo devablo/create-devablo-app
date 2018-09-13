@@ -21,6 +21,9 @@ const questions = [{
 ]
 
 const createReduxModule = (name) => {
+  shell.mkdir(`./src/redux`)
+  shell.mkdir(`./src/redux/modules`)
+
   shell
     .ShellString(`export { default as ${name} } from './${name}'`)
     .toEnd('./src/redux/modules/index.js')
@@ -30,9 +33,10 @@ const createReduxModule = (name) => {
 }
 
 const createComponent = (name, genOpt) => {
+  shell.mkdir(`./src/${genOpt}s`)
   shell.mkdir(`./src/${genOpt}s/${name}`)
   shell
-    .ShellString(`export { default as ${name} } from './${name}/${name}'`)
+    .ShellString(`export { default as ${name} } from './${name}/${name}'; \n`)
     .toEnd(`./src/${genOpt}s/index.js`)
   shell.cd(`./src/${genOpt}s/${name}`)
   shell.touch(`./${name}.js`)
@@ -46,8 +50,6 @@ const generate = () => {
       genOpt,
       name
     } = answers;
-
-    createDefaultStructure();
 
     if (genOpt === 'redux module') {
       createReduxModule(name)
