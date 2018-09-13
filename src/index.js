@@ -3,7 +3,7 @@
 
 const program = require('commander');
 const chalk = require('chalk');
-const packageJson = require('./package.json');
+const packageJson = require('../package.json');
 const generate = require('./scripts/generate');
 const setup = require('./scripts/setup');
 
