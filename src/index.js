@@ -6,6 +6,7 @@ const chalk = require('chalk');
 const packageJson = require('../package.json');
 const generate = require('./scripts/generate');
 const setup = require('./scripts/setup');
+const reactApp = require('./scripts/reactApp');
 
 program
     .version(packageJson.version)
@@ -14,9 +15,17 @@ program
 program
     .command('setup')
     .alias('s')
-    .description('Creates default folder structure')
+    .description('Creates default folder structure & initializes packages.json like npm init')
     .action(() => {
       setup()
+    })
+
+program
+    .command('react')
+    .alias('r')
+    .description('Creates a new react application using create-react-app')
+    .action(() => {
+        reactApp()
     })
 
 program

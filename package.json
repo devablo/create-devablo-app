@@ -10,6 +10,7 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
+    "fs-extra": "^7.0.0",
     "inquirer": "^6.2.0",
     "shelljs": "^0.8.2"
   },
@@ -31,5 +32,8 @@
   "preferGlobal": true,
   "bugs": {
     "url": "https://github.com/devablo/devablo.cli.create-devablo-app/issues"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
