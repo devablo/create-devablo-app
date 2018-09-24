@@ -26,8 +26,8 @@ const questions = [{
   }, 
 ]
 
-const setup = () => {
-  prompt(questions).then(answers => {
+const setup = async () => {
+  await prompt(questions).then(answers => {
     const {
       appName,
       authorName,
@@ -56,6 +56,9 @@ const setup = () => {
     );
 
     createDefaultStructure();
+
+    shell.exec(`git init`);
+    shell.exec(`npm install express`);
   });
 }
 

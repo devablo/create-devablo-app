@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const packageJson = require('../package.json');
 const generate = require('./scripts/generate');
 const setup = require('./scripts/setup');
-const reactApp = require('./scripts/reactApp');
+const reactApp = require('./scripts/web-react');
 
 program
     .version(packageJson.version)
@@ -23,9 +23,9 @@ program
 program
     .command('react')
     .alias('r')
-    .description('Creates a new react application using create-react-app')
+    .description('Creates a new react application')
     .action(() => {
-        reactApp()
+        reactApp();
     })
 
 program
