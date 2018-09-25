@@ -33,5 +33,6 @@ npm install create-devablo-app -g
 ## Usage
 
 * `create-devablo-app setup` -- Setup for initial folder structures and sample files.
+* `create-devablo-app react` -- Setup for a react app with webpack, babel, nodemon & express
 * `create-devablo-app generate | g` -- Starts react-redux scaffolding generator
 * `create-devablo-app -h` -- help
